@@ -71,5 +71,49 @@ const knit = () => {
   
   const optionsFunction = powerButton().options;
   optionsFunction(); 
+
+ 
+const add = (num1, num2) => num1 + num2;
+
+
+const subtract = (num1, num2) => num1 - num2;
+
+
+const multiply = (num1, num2) => num1 * num2;
+
+
+const divide = (num1, num2) => num1 / num2;
+
+const calculate = (num1, num2, operates) => operates(num1, num2);
+
+
+console.log(calculate(5, 3, add));      
+console.log(calculate(10, 4, subtract));  
+console.log(calculate(3, 7, multiply));
+console.log(calculate(20, 5, divide));    
+ 
+const bar = () => {
+    console.log('bar here');
+};
+
+
+bar();
+
+
+const foo = () => {
+    console.log('foo here');
+};
+
+
+foo();
+
+// The error here is a syntax error. The correct syntax for defining an arrow function is const foo = () => {...}.
+//  In the provided code, there's a missing equal sign (=) after const foo, leading to a syntax error.
+// it should be written as 
+// const foo = () => {
+//     console.log('hi');
+// };
+
+// foo();
   
   
